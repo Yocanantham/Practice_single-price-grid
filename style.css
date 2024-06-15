@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 5rem;
+    
+}
+
+.main {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 15px 15px 35px hsl(218, 22%, 67%);
+    min-width: 375px;
+    max-width: 1440;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr)); */
+    display: flex;
+    flex-flow: column nowrap;
+}
+.conatiner {
+    display: flex;
+    flex-flow: row wrap;
+}
+/* ! Summary */
+
+
+.summary {
+    background-color: white;
+    padding: 1.5rem;
+}
+.summary h3 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding: 1rem 0rem;
+}
+.summary h4 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 0rem;
+}
+.summary p {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    padding: 0.5rem 0rem;
+    line-height: 1.5rem;
+}
+
+
+/* ! Subscription */
+
+.subscription {
+    flex: 1 1 375px;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+.subscription h3 {
+    font-size: 1.5rem;
+}
+.subscription p:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.price {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.duration {
+    color: hsl(204, 43%, 93%);
+    font-weight: 350;
+    opacity: 0.85;
+}
+input {
+    display: block;
+    align-self: center;
+    padding: 1rem 1.4rem ;
+    background-color: hsla(71, 73%, 54%, 0.85);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid transparent;
+    width: 95%;
+    border-radius: 9px;
+    transition: width 1s ease,letter-spacing 1s ease,background-color 150ms ease-in,font-weight 1s ease;
+}
+input:hover {
+    cursor: pointer;
+    width: 85%;
+    letter-spacing: 5px;
+    font-weight: 900;
+    background-color: hsl(71, 73%, 54%);
+}
+
+/* ! Description */
+
+.description {
+    flex: 1 1 375px;
+    background-color: hsl(179, 46%, 61%);
+    padding: 1.5rem;
+    color: white;
+}
+.description h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.description ul {
+    list-style-type: none;
+    color: hsl(204, 43%, 93%);
+}
